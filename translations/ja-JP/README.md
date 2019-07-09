@@ -4,3 +4,6 @@
 [![Gitter][gitter-image]][gitter-url]
 
 これは、あんまり深くBashを学びたい人のために書かれたファイルです。
+> **Tip** このファイルを基にしたインタラクティブワークショップ[**learnyoubash**](https://git.io/learnyoubash)を試してください。
+
+# Node Packaged Manuscript
