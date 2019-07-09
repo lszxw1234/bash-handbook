@@ -1,3 +1,6 @@
-# bash-handbook-ja-JP [![CC 4.0][cc-image]][cc-url]
+# bash-handbook-ja-JP 
+[![CC 4.0][cc-image]][cc-url]
+[![NPM version][npm-image]][npm-url]
+[![Gitter][gitter-image]][gitter-url]
 
-谨以此文档献给那些想学习Bash又无需钻研太深的人。
+これは、あんまり深くBashを学びたい人のために書かれたファイルです。
