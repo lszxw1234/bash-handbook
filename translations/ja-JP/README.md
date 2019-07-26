@@ -7,7 +7,7 @@
 > **Tip** このファイルを基にしたインタラクティブワークショップ[**learnyoubash**](https://git.io/learnyoubash)を試してください。
 
 # Node Packaged Manuscript
-`npm`を利用して、このファイルをインストールができます：
+`npm`を利用し、このファイルをインストールができます：
 ```
 $ npm install -g bash-handbook
 ```
@@ -29,9 +29,11 @@ $ npm install -g bash-handbook
 
 [tr-request]: https://github.com/denysdovhan/bash-handbook/issues/new?title=Translation%20Request:%20%5BPlease%20enter%20language%20here%5D&body=I%20am%20able%20to%20translate%20this%20language%20%5Byes/no%5D
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 # 目次
 
-- [序論](#introduction)
+- [序論](#序論)
 - [シェルとモード](#shells-and-modes)
   - [インタラクティブモード](#interactive-mode)
   - [非インタラクティブモード](#non-interactive-mode)
@@ -72,3 +74,29 @@ $ npm install -g bash-handbook
 - [もっと学びたいですか？](#want-to-learn-more)
 - [その他のリソース](#other-resources)
 - [ライセンス](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# 序論
+もし君が開発者、あなたが時間の価値を知っています。作業プロセスを最適化する、それは開発者の仕事の最も重要な１つです。
+
+効率性と生産性への道は、私たちは時々次のような動作を何度も何度も繰り返されなければならない：
+*スクリーンショットを撮ってサーバーにアップロードする
+*さまざまな形や形式のテキストを処理する
+*異なる形式間でのファイル変換
+*プログラムの出力をパースする
+
+私たちの救世主、**Bash**を利用してください。
+
+BashはGNUプロジェクトのために[Brian Fox] []によって書かれた[Bourneシェル]（https://en.wikipedia.org/wiki/Bourne_shell）に代わるフリーソフトウェアとしてのUnixシェルです。
+1989年にリリースされ、長い間LinuxとmacOSのデフォルトシェルとして配布されてきました。
+
+[ブライアンフォックス]：https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer）
+<!-- link this format, because some MD processors handle '()' in URLs poorly -->
+
+では、なぜ３０年以上前に書かれたことを学ぶ必要があるの？答えは簡単です。
+これは今日、全てのUnixベースのシステムに効率的なスクリプトを作成するための最も強力、そして移植性が高いのツールの１つです。
+そしてそれはあなたがbashを学ぶべき理由です。
+
+このハンドブックでは、bashで最も重要な概念を例を使って説明します。 
+この概説がお役に立てば幸いです。
