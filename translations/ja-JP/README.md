@@ -91,7 +91,7 @@ $ npm install -g bash-handbook
 BashはGNUプロジェクトのために[Brian Fox][]によって書かれた[Bourneシェル](https://en.wikipedia.org/wiki/Bourne_shell)に代わるフリーソフトウェアとしてのUnixシェルです。
 1989年にリリースされ、長い間LinuxとmacOSのデフォルトシェルとして配布されてきました。
 
-[Brian Fox]：https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
+[Brian Fox]: https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
 <!-- link this format, because some MD processors handle '()' in URLs poorly -->
 
 では、なぜ３０年以上前に書かれたことを学ぶ必要があるの？答えは簡単です。
