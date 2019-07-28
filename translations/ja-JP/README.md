@@ -34,9 +34,9 @@ $ npm install -g bash-handbook
 # 目次
 
 - [序論](#序論)
-- [シェルとモード](#shells-and-modes)
-  - [インタラクティブモード](#interactive-mode)
-  - [非インタラクティブモード](#non-interactive-mode)
+- [シェルとモード](#シェルとモード)
+  - [対話型モード](#対話型モード)
+  - [非対話型モード](#非対話型モード)
   - [終了コード](#exit-codes)
 - [コメント](#comments)
 - [変数](#variables)
@@ -77,7 +77,7 @@ $ npm install -g bash-handbook
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# 序論
+#序論
 もし君が開発者、あなたが時間の価値を知っています。作業プロセスを最適化する、それは開発者の仕事の最も重要な１つです。
 
 効率性と生産性への道は、私たちは時々次のような動作を何度も何度も繰り返されなければならない：
@@ -100,3 +100,65 @@ BashはGNUプロジェクトのために[Brian Fox] []によって書かれた[B
 
 このハンドブックでは、bashで最も重要な概念を例を使って説明します。 
 この概説がお役に立てば幸いです。
+
+#シェルとモード
+
+ユーザーbashシェルは、対話型と非対話型２つのモートで動作します。
+
+##対話型モード
+
+Ubuntuを使用している場合は、７つの仮想端末を利用できます。
+デスクトップ環境は７番目の仮想端末で行われるので、`Ctrl-Alt-F7`キーバインディングを使って、わかりやすいGUIに戻ることができます。
+
+`Ctrl-Alt-F1`キーバインドを使って、シェルを開きます。その後、GUIが消え、仮想端末の１つが表示されます。
+
+このような何かを見るとき、インタラクティブモードで動いています：
+user@host:~$
+
+ここで、`ls`、` grep`、 `cd`、` mkdir`、 `rm`のような様々なUnixコマンドを入力して、それらの実行結果を見ることができます。
+
+ユーザーと直接対話するので、対話型シェルと呼びます。
+
+仮想端末を使うのはあまり便利ではありません。例えば、ファイルを編集して別のコマンドを同時に実行したい場合、次のよううな仮想端末エミュレータを使用することをお勤めします。
+
+- [GNOME Terminal](https://en.wikipedia.org/wiki/GNOME_Terminal)
+- [Terminator](https://en.wikipedia.org/wiki/Terminator_(terminal_emulator))
+- [iTerm2](https://en.wikipedia.org/wiki/ITerm2)
+- [ConEmu](https://en.wikipedia.org/wiki/ConEmu)
+
+##非対話型モード
+
+非対話型モードでは、シェルはファイルまたはパイプからコマンドを読み取り、そしてそれらを実行します。インタプリタがファイルの終わりに達すると、シェルプロセスはこのセッションを終了して、親プロセスに戻ります。
+
+	sh /path/to/script.sh
+    bash /path/to/script.sh
+
+上の例では、`script.sh`はシェルインタプリタが実行できるコマンドからなる通常のテキストファイルで、
+`sh`や`bash`はシェルのインタプリタプログラムです。お好きなテキストエディタ（例：vim、nano、Sublime Text、Atomなど）を使って `script.sh`を作成できます。
+
+`chmod`をコマンドを使ってスクリプトを簡単に実行可能なファイルに変更もできます：
+
+	chmod +x /path/to/script.sh
+	
+さらに、スクリプトの最初の１行には、このファイルを実行使用するプログラムを指定する必要があります。
+
+```bash
+#!/bin/bash
+echo "Hello, world!"
+```
+
+また、`bash`の代わりに` sh`を使いたければ、 `#!/bin/bash`を`#!/bin/sh`に変更してください。この `#!`の文字列は[shebang]（http://en.wikipedia.org/wiki/Shebang_%28Unix%29）として知られています。これで、次のようにスクリプトを実行することができます。
+
+/path/to/script.sh
+
+上の例では、便利なトリック`echo`を使って端末の画面にテキストを表示することです。
+
+shebang行を使用するもう１つの方法は次の通りです：
+
+```bash
+#!/usr/bin/env bash
+echo "Hello, world!"
+```
+
+このshebang行の利点は、環境変数PATHに基づいてプログラム（この場合はbash）を検索することです。
+ファイルシステム上のプログラムの場所を常に想定できるとは限らないので、これは上で示した最初の方法よりもしばしば好まれます。これはシステム上の `PATH`変数がプログラムの代替バージョンを指すように設定されている場合にも便利です。例えば、元のバージョンを保持したまま新しいバージョンの `bash`をインストールし、新しいバージョンの場所を` PATH`変数に挿入することができます。 `＃！/ bin / bash`を使うと元の` bash`を使うことになりますが、 `＃！/ usr / bin / env bash`は新しいバージョンを使います。
