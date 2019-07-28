@@ -88,10 +88,10 @@ $ npm install -g bash-handbook
 
 私たちの救世主、**Bash**を利用してください。
 
-BashはGNUプロジェクトのために[Brian Fox] []によって書かれた[Bourneシェル]（https://en.wikipedia.org/wiki/Bourne_shell）に代わるフリーソフトウェアとしてのUnixシェルです。
+BashはGNUプロジェクトのために[Brian Fox] []によって書かれた[Bourneシェル](https://en.wikipedia.org/wiki/Bourne_shell)に代わるフリーソフトウェアとしてのUnixシェルです。
 1989年にリリースされ、長い間LinuxとmacOSのデフォルトシェルとして配布されてきました。
 
-[ブライアンフォックス]：https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer）
+[ブライアンフォックス]：https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
 <!-- link this format, because some MD processors handle '()' in URLs poorly -->
 
 では、なぜ３０年以上前に書かれたことを学ぶ必要があるの？答えは簡単です。
@@ -147,7 +147,7 @@ user@host:~$
 echo "Hello, world!"
 ```
 
-また、`bash`の代わりに` sh`を使いたければ、 `#!/bin/bash`を`#!/bin/sh`に変更してください。この `#!`の文字列は[shebang]（http://en.wikipedia.org/wiki/Shebang_%28Unix%29）として知られています。これで、次のようにスクリプトを実行することができます。
+また、`bash`の代わりに` sh`を使いたければ、 `#!/bin/bash`を`#!/bin/sh`に変更してください。この `#!`の文字列は[shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29)として知られています。これで、次のようにスクリプトを実行することができます。
 
 /path/to/script.sh
 
