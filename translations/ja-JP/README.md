@@ -77,7 +77,7 @@ $ npm install -g bash-handbook
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-#序論
+# 序論
 もし君が開発者、あなたが時間の価値を知っています。作業プロセスを最適化する、それは開発者の仕事の最も重要な１つです。
 
 効率性と生産性への道は、私たちは時々次のような動作を何度も何度も繰り返されなければならない：
@@ -156,9 +156,10 @@ echo "Hello, world!"
 shebang行を使用するもう１つの方法は次の通りです：
 
 ```bash
-#!/usr/bin/env bash
+#!/bin/bash
 echo "Hello, world!"
-```　
+```
+
 
 このshebang行の利点は、環境変数PATHに基づいてプログラム（この場合はbash）を検索することです。
 ファイルシステム上のプログラムの場所を常に想定できるとは限らないので、これは上で示した最初の方法よりもしばしば好まれます。
