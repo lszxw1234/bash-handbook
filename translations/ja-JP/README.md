@@ -362,3 +362,19 @@ cat "$FILE" # ファイル１つを表示します: `Favorite Things.txt`
 この例の問題はFILEを`Favorite-Things.txt`に改名することで解決できますが、
 環境変数、位置パラメータ、または他のコマンドの出力(` find`、 `cat`など)からの入力を考えしてください。
 入力にスペースが含まれる可能性がある場合は、展開を引用符で囲むように注意してください。
+
+
+# License
+
+[![CC 4.0][cc-image]][cc-url]
+
+&copy; [Denys Dovhan](http://denysdovhan.com)
+
+[cc-url]: http://creativecommons.org/licenses/by/4.0/
+[cc-image]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=flat-square
+
+[npm-url]: https://npmjs.org/package/bash-handbook
+[npm-image]: https://img.shields.io/npm/v/bash-handbook.svg?style=flat-square
+
+[gitter-url]: https://gitter.im/denysdovhan/bash-handbook
+[gitter-image]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
