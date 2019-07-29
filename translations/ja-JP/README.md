@@ -242,4 +242,4 @@ bashにはたくさんのグローバル変数があります。あなたはこ�
 | `$PS1`       | プライマリプロンプト文字列。                                 	|
 | `$PS2`       | セコンドりプロンプト文字列。                                 	|
 
-このリンク [this link](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#sect_03_02_04) に従って、Bashの環境変数の拡張リストを確認してください。
+この [リンク](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#sect_03_02_04) に従って、Bashの環境変数の拡張リストを確認してください。
