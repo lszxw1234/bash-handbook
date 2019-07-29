@@ -156,7 +156,7 @@ echo "Hello, world!"
 shebang行を使用するもう１つの方法は次の通りです：
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Hello, world!"
 ```
 
